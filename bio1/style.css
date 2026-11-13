@@ -1,0 +1,241 @@
+/* column */
+
+.three-column-layout {
+    padding: 40px 3%;
+    align-items: start;
+}
+
+/* spacing */
+
+.left-column,
+.middle-column,
+.right-column {
+    padding: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/* NAME AND TITLE */
+
+#name {
+    font-family: "Bodoni Moda", serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+#position {
+    font-family: "Bodoni Moda", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*   Section heads */
+
+/* EXPERIENCE, ABOUT ME, MY WORK */
+
+.section-title,
+#about {
+    font-family: "Bodoni Moda", serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    color: #D4AF37;
+}
+
+/* equal heights */
+
+/* headshot */
+
+.portrait-wrapper {
+    width: 100%;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.portrait {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* about me */
+
+.about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#abouttext {
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 0;
+    color: #36454F;
+}
+
+
+/* experience */
+
+.job {
+    font-family: "EB Garamond", serif;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #36454F;
+}
+
+.blurb {
+    font-family: "EB Garamond", serif;
+    font-size: 17px;
+    line-height: 1.5;
+    padding-left: 22px;
+    margin-bottom: 25px;
+    color: #36454F;
+}
+
+
+/* samples */
+
+.featured {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: block;
+}
+
+
+/* samples headlines */
+
+.hed {
+    display: block;
+    font-family: "EB Garamond", serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+.hed:hover {
+    color: #FFFFFF;
+}
+
+
+/* social media links */
+
+.social-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #D4AF37;
+}
+
+.social-links a:hover {
+    color: #FFFFFF;
+}
+
+
+/* icons */
+
+.icons {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.icons a {
+    color: #D4AF37;
+}
+
+.icons a:hover {
+    color: #FFFFFF;
+}
+
+
+/* mobile*/
+
+@media (max-width: 991px) {
+
+    .three-column-layout {
+        padding: 20px 5%;
+    }
+
+    /* Move photo and About Me to the top */
+
+    .middle-column {
+        order: 0;
+        margin-bottom: 35px;
+    }
+
+    .portrait {
+        max-width: 280px;
+    }
+
+    .left-column,
+    .right-column {
+        margin-bottom: 30px;
+    }
+
+    /* Keep mobile headings consistent */
+
+    .section-title,
+    #about {
+        font-size: 24px;
+    }
+
+}
+
+/* body */
+
+body,
+.content {
+    background-color: #FFC5DB;
+}
+
+body,
+p,
+li,
+.job,
+.blurb,
+#abouttext {
+    color: #36454F;
+}
+
+/* social */
+
+.icons a,
+.social-links a {
+    color: #D4AF37;
+}
+
+.icons a:hover,
+.social-links a:hover {
+    color: #FFFFFF;
+}
+
+.hed {
+    color: #D4AF37;
+}
+
+.hed:hover {
+    color: #FFFFFF;
+}
+
+.job strong {
+    color: #D4AF37;
+}
